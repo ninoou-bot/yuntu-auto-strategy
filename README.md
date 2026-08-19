@@ -1,5 +1,6 @@
 # 🚗 巨量云图汽车版全域策略与卖点心智检证通用技能 (yuntu-auto-strategy)
 
+[![Auth Guide](https://img.shields.io/badge/Auth%20Guide-%E8%BF%9E%E6%8E%A5%E4%B8%8E%E9%89%B4%E6%9D%83%E6%8C%87%E5%8D%97-brightgreen.svg)](AUTH_GUIDE.md)
 [![Skill](https://img.shields.io/badge/Agent%20Skill-Ready-blue.svg)](SKILL.md)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
