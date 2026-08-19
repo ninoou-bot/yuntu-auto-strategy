@@ -1,22 +1,72 @@
-# 🚗 巨量云图汽车版全域策略与资产诊断通用技能 (yuntu-auto-strategy)
+# 🚗 巨量云图汽车版全域策略与卖点心智检证通用技能 (yuntu-auto-strategy)
 
 [![Skill](https://img.shields.io/badge/Agent%20Skill-Ready-blue.svg)](SKILL.md)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-专为汽车品牌数字营销打造的**巨量云图（OceanEngine Yuntu）全域策略与人群资产诊断 AI Agent 技能库**。  
+专为汽车品牌营销打造的**巨量云图（OceanEngine Yuntu）全域策略与产品卖点心智检证 AI Agent 技能库**。  
 全量兼容主流 AI Agent（**Google Antigravity、Claude Code、Cursor、GitHub Copilot CLI、Roo Code、Amp** 等）。
 
 ---
 
-## 🌟 核心功能特性
+## 🌟 核心杀手级功能：【产品卖点体系 vs 云图心智反射交叉检证 SOP】
 
-1. **⚡ 秒级 5A 数据自动化提取**：封装云图汽车版底层 API，支持任意汽车品牌与车系（已预设传祺全系 17+ 车型 ID），双端（抖音 cdy + 懂车帝 cdc）毫秒级取数。
-2. **📊 5A 触点量化阈值与流转系数诊断**：内置官方底层的曝光/点击/播放时长/看后搜判定规则，独家引入 `(A1+A2)/A3` 流转系数对标模型（对标行业 TOP20 均值 8.6）。
-3. **⭐ 星图达人 150 分加权考核模型**：从基础流量（100分）、完播互动（10分）、看后主动搜索（20分）到 A3 净增贡献（20分），科学筛选优质合作矩阵与爆文加热决策。
-4. **🏷️ 4L 价值体系 × TOP50 心智排名矩阵**：将车系核心卖点（空间/底盘/续航/安全）与云图 TOP50 讨论词排名升降及美誉度定量打通，排查传播盲点。
-5. **👥 汽车行业新八大人群 BUY 策略**：基于基础属性 × 汽车属性 × 心智属性聚类，精准输出各圈层（生活精算师、温馨生活家、摩登青年客等）定制化营销切角。
-6. **🎨 飞书原生矢量画板（Canvas/SVG）高质感交付**：内置 5 大原生画板 XML 模板，采用绝对坐标防重叠体系，一键生成媲美咨询公司总监级的在线飞书复盘报告。
+汽车营销中最核心的痛点是：**主机厂自认为的主推卖点，用户真的买账了吗？宣发预算有没有打在棉花上？**
+
+本技能提供全车型通用的**「输入卖点体系 ➔ 自动抓取数据 ➔ 五维交叉检证 ➔ 预算与话术修正」**闭环：
+
+```
+                              用户态度 (美誉度 / 情感正负)
+                                            ▲
+                                            │
+               【🌟 强占领区】                │             【📈 突围攀升区】
+     • 官方主推核心卖点                      │   • 新进榜 / 排名大幅上升 (↑10+)
+     • 稳居 TOP 10 高位                      │   • 正向美誉度较高
+     • 美誉度高 (≥20%)                      │   • 属于成长型爆发卖点
+     • 策略：保持声量，作为第一沟通锚点        │   • 策略：追加投流（种草通/达人加码）
+                                            │
+   ─────────────────────────────────────────┼─────────────────────────────────────────► 认知深度 (云图 TOP50 排名)
+                                            │
+               【🚨 口碑风险区】              │             【⚠️ 盲点 / 哑炮区】
+     • 进入 TOP 50 讨论                     │   • 官方宣发重推，但【未进入 TOP 50】
+     • 但美誉度为负或偏低 (≤0%)              │   • 用户讨论极少，认知完全未破圈
+     • 存在用户顾虑 / 槽点 / 竞品攻击         │   • 策略：判定为无效卖点，停止硬推或
+     • 策略：专项公关科普 + 针对性打消顾虑    │           彻底重构场景化话术
+                                            │
+                                            ▼
+```
+
+### 用户输入示例：
+```markdown
+【车型】：传祺向往 S7 (或任意车型)
+【分析周期】：上市后近 30 天
+【主推卖点价值体系】：
+1. 空间：2.9米大轴距、同级最大储物容积
+2. 舒适：双阀SDC电磁悬架、全感官智能防晕车系统
+3. 动力：全新插混系统、CLTC 248km纯电续航、电四驱
+4. 安全：360°气囊矩阵、神盾电池
+5. 外观科技：14种交互灯语、三排电动滑轨
+```
+
+### AI 自动输出示例：
+| 主推卖点 | 对应云图 TOP50 心智词 | 当前排名 (环比升降) | 美誉度 | 五维象限归类 | 策略行动建议 |
+|---|---|---|---|:---:|---|
+| **大空间/储物** | **空间 / 储物空间** | TOP 2 (↑2) | 54% | 🌟 **强占领** | 核心护城河，持续作为第一沟通锚点 |
+| **电磁悬架** | **电磁悬架** | TOP 7 (New) | 26% | 📈 **突围中** | 舒适卖点成功破圈，建议追加种草通加热 |
+| **防晕车系统** | **防晕车** | TOP 42 (New) | 6% | 📈 **突围中** | 差异化蓝海卖点，建议微电影场景化种草 |
+| **神盾电池** | **电池** | TOP 14 (↑14) | -3% | 🚨 **风险区** | 讨论多但美誉度为负，需硬核测评打消顾虑 |
+| **交互灯语** | **未进入 TOP 50** | - | - | ⚠️ **盲点区** | 用户不买账，判定为低效卖点，立即止损 |
+| **三排电动滑轨**| **未进入 TOP 50** | - | - | ⚠️ **盲点区** | 属于配置表自嗨，应融入二胎生活场景重构话术 |
+
+---
+
+## 🚀 其它完整功能模块
+
+1. **⚡ 秒级 5A 数据自动化提取**：支持任意汽车品牌与车系，双端（抖音 cdy + 懂车帝 cdc）毫秒级取数。
+2. **📊 5A 触点量化阈值与流转系数诊断**：独家引入 `(A1+A2)/A3` 流转系数对标模型（对标行业 TOP20 均值 8.6）。
+3. **⭐ 星图达人 150 分加权考核模型**：流量（100分）+ 完播（10分）+ 看后搜（20分）+ A3新增（20分），科学筛选优质合作矩阵与爆文加热。
+4. **👥 汽车行业新八大人群 BUY 策略**：精准输出各圈层（生活精算师、温馨生活家、摩登青年客等）定制化营销切角。
+5. **🎨 飞书原生矢量画板（Canvas/SVG）高质感交付**：内置 5 大原生画板 XML 模板，采用绝对坐标防重叠体系，一键生成飞书复盘报告。
 
 ---
 
@@ -24,67 +74,41 @@
 
 ```
 yuntu-auto-strategy/
-├── SKILL.md                          # AI Agent 技能入口定义文件
-├── README.md                         # 快速入门与完整使用文档
-├── .env.example                      # 环境变量配置模板（脱敏）
-├── requirements.txt                  # Python 依赖清单
+├── SKILL.md                                  # AI Agent 技能入口定义文件
+├── README.md                                 # 快速入门与完整使用文档
+├── .env.example                              # 环境变量配置模板（脱敏）
+├── requirements.txt                          # Python 依赖清单
 ├── scripts/
-│   └── yuntu_client.py               # 巨量云图 API 自动化客户端 (CLI & Module)
+│   └── yuntu_client.py                       # 巨量云图 API 自动化客户端 (CLI & Module)
 ├── references/
-│   ├── 5a_quant_thresholds.md        # 5A 底层判定量化规则表与流转诊断模型
-│   ├── kol_150_eval_model.md         # 星图达人 150 分考核评分卡与爆文定律
-│   ├── mind_top50_matrix.md          # 4L 价值体系 × 云图 TOP50 心智映射矩阵
-│   └── audience_buy_personas.md      # 汽车新八大人群画像与车系矩阵
+│   ├── selling_points_validation_sop.md      # 🌟 卖点 vs 云图心智反射交叉检证 SOP
+│   ├── 5a_quant_thresholds.md                # 5A 底层判定量化规则表与流转诊断模型
+│   ├── kol_150_eval_model.md                 # 星图达人 150 分考核评分卡与爆文定律
+│   └── audience_buy_personas.md              # 汽车新八大人群画像与车系矩阵
 └── templates/
-    └── feishu_canvas_templates.xml   # 5 大飞书原生矢量画板 XML 模板
+    └── feishu_canvas_templates.xml           # 5 大飞书原生矢量画板 XML 模板
 ```
 
 ---
 
 ## 🚀 快速开始
 
-### 1. 安装依赖
+### 1. 安装依赖与配置环境
 ```bash
 git clone https://github.com/ninoou-bot/yuntu-auto-strategy.git
 cd yuntu-auto-strategy
 pip install -r requirements.txt
+cp .env.example .env  # 填入云图 Cookie 与 aadvid
 ```
 
-### 2. 配置环境变量
-复制 `.env.example` 并重命名为 `.env`：
+### 2. 命令行调用
 ```bash
-cp .env.example .env
-```
-在 `.env` 中填入你的巨量云图登录 Cookie 与账户 aadvid：
-```ini
-YUNTU_COOKIE="sessionid=your_cookie_here; ..."
-YUNTU_AADVID="1637827271287884"
-```
-
-### 3. CLI 命令行调用
-```bash
-# 查询指定日期和车型的 5A 数据概览
-python3 scripts/yuntu_client.py -d 2026-08-17 -t "向往M8"
-
-# 输出结构化 JSON
+# 查询指定日期和车型的 5A 数据
 python3 scripts/yuntu_client.py -d 2026-08-17 -t "向往S7" --json
 ```
 
 ---
 
-## 🤖 在各大 AI Agent 中加载本技能
-
-### 1. Google Antigravity
-将本仓库克隆至 `~/.gemini/config/skills/yuntu_auto_strategy/` 或项目下的 `.agents/skills/yuntu_auto_strategy/`，Antigravity 将在对话中自动按需触发。
-
-### 2. Claude Code / Amp / Roo Code
-在项目根目录或全局配置中引入 `SKILL.md`，Agent 会自动阅读 SOP 并执行分析。
-
-### 3. Cursor / Copilot
-在 Prompt 中直接 `@SKILL.md` 即可调用全部 5A 分析方法论与脚本。
-
----
-
 ## 📄 开源协议
 
-本项目基于 [MIT License](LICENSE) 开源。欢迎 PR 与交流！
+本项目基于 [MIT License](LICENSE) 开源。
