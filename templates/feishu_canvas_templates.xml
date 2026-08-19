@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  飞书原生画板模板库 (Feishu Native Whiteboard Canvas Templates)
+  用于 yuntu_auto_strategy 技能生成 100% 画布级高质感飞书文档
+  规则：所有元素使用绝对物理坐标，严禁使用 <g transform="..."> 相对嵌套，彻底防止文字重叠与空白卡片！
+-->
+<templates>
+
+  <!-- Template 1: 5A & A3 走势双轴面积折线图 -->
+  <template name="svg_trend">
+    <whiteboard type="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 380" width="100%" height="380">
+        <defs>
+          <linearGradient id="gTot" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2563EB" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#2563EB" stop-opacity="0.02"/>
+          </linearGradient>
+          <linearGradient id="gA3" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#EA580C" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#EA580C" stop-opacity="0.02"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="940" height="380" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <text x="30" y="38" font-size="16" font-family="PingFang SC, sans-serif" font-weight="bold" fill="#0F172A">📈 {{CHART_TITLE}}</text>
+        <rect x="660" y="24" width="12" height="12" rx="3" fill="#2563EB"/>
+        <text x="678" y="35" font-size="11" font-family="PingFang SC, sans-serif" fill="#334155">5A 总资产 (亿)</text>
+        <rect x="790" y="24" width="12" height="12" rx="3" fill="#EA580C"/>
+        <text x="808" y="35" font-size="11" font-family="PingFang SC, sans-serif" fill="#334155">A3 种草 (万)</text>
+        <!-- Axes, Grid, Area Paths and Dots go here -->
+      </svg>
+    </whiteboard>
+  </template>
+
+  <!-- Template 2: 双端协同对比分组柱状图 -->
+  <template name="svg_dual_bar">
+    <whiteboard type="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 320" width="100%" height="320">
+        <rect x="0" y="0" width="940" height="320" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <text x="30" y="36" font-size="16" font-family="PingFang SC, sans-serif" font-weight="bold" fill="#0F172A">📊 {{DUAL_CHART_TITLE}}</text>
+        <rect x="640" y="24" width="12" height="12" rx="3" fill="#3B82F6"/>
+        <text x="658" y="35" font-size="11" font-family="PingFang SC, sans-serif" fill="#334155">抖音 A3 (万)</text>
+        <rect x="780" y="24" width="12" height="12" rx="3" fill="#10B981"/>
+        <text x="798" y="35" font-size="11" font-family="PingFang SC, sans-serif" fill="#334155">懂车帝 A4 (人)</text>
+        <!-- Columns go here -->
+      </svg>
+    </whiteboard>
+  </template>
+
+  <!-- Template 3: 5A 触点全景流转画板 -->
+  <template name="svg_5a_flow">
+    <whiteboard type="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 280" width="100%" height="280">
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 1 L 8 5 L 0 9 z" fill="#94A3B8"/>
+          </marker>
+        </defs>
+        <rect x="0" y="0" width="940" height="280" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <text x="30" y="36" font-size="16" font-family="PingFang SC, sans-serif" font-weight="bold" fill="#0F172A">🎯 「品-星-推-搜-直」5A 全域触点流转全景画板</text>
+        <!-- 5 absolute positioned cards connected with lines -->
+      </svg>
+    </whiteboard>
+  </template>
+
+  <!-- Template 4: 达人金字塔与爆文决策矩阵 -->
+  <template name="svg_kol_matrix">
+    <whiteboard type="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 340" width="100%" height="340">
+        <rect x="0" y="0" width="940" height="340" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+        <text x="30" y="36" font-size="16" font-family="PingFang SC, sans-serif" font-weight="bold" fill="#0F172A">🌟 星图达人矩阵金字塔与爆文加热决策模型画板</text>
+        <!-- Left: 3-tier pyramid; Right: 4-quadrant cards with absolute x/y -->
+      </svg>
+    </whiteboard>
+  </template>
+
+</templates>
